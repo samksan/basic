@@ -38,6 +38,17 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'urlManager'=>[
+//            'enableStrictParsing'=>true,
+            // 美化 url
+            'enablePrettyUrl'=>true,
+
+            // 去掉 index.php
+            'showScriptName'=>false,
+
+            // 后缀名 .html
+            'suffix'=>'.html',
+        ],
     ],
     'params' => $params,
 ];
